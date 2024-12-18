@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Flag Guessing Game</h1>
+        <button class="play-btn" onclick="startGame()">Play</button>
+    </div>
+    
+    <div id="gameScreen">
+        <div id="timer">Time: 15</div>
+        <div id="lives">Lives: 3 </div>
+        <div id="highScore">High Score: 0</div>
+        <h2>Which country does this flag belong to?</h2>
+        <img id="flagImage" class="flag-img" src="" alt="Flag">
+        <div class="options" id="options"></div>
+        <div id="result"></div>
+        <div class="flag-info" id="flagInfo"></div>
+    </div>
+    
+    <div id="gameOverScreen">
+        <h1 id="gameOverText">Game Over!</h1>
+        <p id="finalScore">Score: 0</p>
+        <button class="play-btn" onclick="startGame()">Play Again</button>
+    </div>
+
+    <!-- Audio Files -->
+    <audio id="buttonSound" src="audio/button.aac"></audio>
+    <audio id="timerSound" src="audio/timer.aac"></audio>
+    <audio id="correctSound" src="audio/correct.mpeg"></audio>
+    <audio id="wrongSound" src="audio/wrong.mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

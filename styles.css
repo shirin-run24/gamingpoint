@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popcat';
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#startScreen, #gameScreen, #gameOverScreen {
+    text-align: center;
+    display: none;
+}
+
+#startScreen {
+    background-image: url('https://imgs.search.brave.com/WooJ5LJ_b4QmMy0iMWoQ9j9f2aKDqrg7TW0i_4vgNOc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzA3LzY5LzQy/LzM2MF9GXzgwNzY5/NDI4OF9vREREWDFY/N0taTWZxWmFEQUVi/SkpOTzRLZ1FVTWM3/SS5qcGc');
+    background-color: rgba(250, 240, 240, 0.918);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#startScreen h1 {
+    color: white;
+}
+
+#gameScreen {
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+}
+
+#gameScreen h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gameOverScreen {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.831);
+    color: black;
+}
+
+.play-btn {
+    padding: 15px 30px;
+    font-size: 25px;
+    font-family: 'Popcat';
+    background-color: rgba(237, 229, 239, 0.986);
+    color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.play-btn:hover {
+    background-color: green;
+}
+
+.flag-img {
+    max-width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.option-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #1976D2;
+}
+
+#timer {
+    font-size: 24px;
+    margin: 10px;
+}
+
+#lives {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#result {
+    font-size: 24px;
+    margin: 10px;
+    min-height: 30px;
+}
+
+#highScore {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.flag-info {
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
